@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              tools:context=".View.MainActivity"
+              android:background="@drawable/bgbw">
+<androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/colorTransparent">
+    <ImageView
+            android:id="@+id/imgbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:src="@drawable/st" />
+</androidx.cardview.widget.CardView>
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+            <!--&lt;!&ndash;xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+            <!--&lt;!&ndash;xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;tools:context=".MainActivity"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<ViewFlipper&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/v_flipper"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="210dp"/>&ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view"
+            android:layout_alignStart="@+id/card_view"
+            app:cardBackgroundColor="@color/colorTransparent">
+
+        <TextView
+                android:id="@+id/tvtext"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:text="Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability."
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="@color/colorTransparent"
+            app:cardCornerRadius="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cardview2"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="3dp">
+
+
+        <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_maps"
+                android:layout_width="110dp"
+                android:layout_height="82dp"
+                android:src="@drawable/maps"/>
+        <TextView
+                android:text="Location"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="@color/colorTransparent"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@+id/cardview2"
+            android:layout_alignEnd="@+id/cardview2">
+        <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/menu"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ba"
+        />
+        <TextView
+                android:text="Menu"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

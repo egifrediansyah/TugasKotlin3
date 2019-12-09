@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorGradient1">#2f8787</color>
+    <color name="colorGradient2">#2c8c29</color>
+    <color name="colorGradient3">#147ae0</color>
+    <color name="colorGradient4">#c2710e</color>
+    <color name="colorGradient5">#db2307</color>
+</resources>
